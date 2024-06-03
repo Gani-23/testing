@@ -1,11 +1,134 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My First HTML Page</title>
+    <title>Hosting a Website on AWS EC2</title>
+    <link href="https://cdn.tailwindcss.com/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #1a202c;
+            color: #e2e8f0;
+            font-family: Arial, sans-serif;
+        }
+
+        h1, h2, p {
+            color: #e2e8f0;
+            font-family: 'Times New Roman', serif;
+        }
+
+        ol, li {
+            color: #e2e8f0;
+            font-family: 'Courier New', monospace;
+        }
+
+        .card {
+            background-color: rgba(45, 55, 72, 0.8);
+            border-radius: 8px;
+            padding: 16px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            margin-bottom: 16px;
+        }
+
+        /* Additional Styles */
+        .text-center {
+            text-align: center;
+        }
+
+        .mt-8 {
+            margin-top: 2rem;
+        }
+
+        .mt-4 {
+            margin-top: 1rem;
+        }
+
+        .list-decimal {
+            list-style-type: decimal;
+        }
+
+        .ml-8 {
+            margin-left: 2rem;
+        }
+
+        /* Impressive Styles */
+        .animated {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .interactive {
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .interactive:hover {
+            transform: rotate(360deg);
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My First HTML Page!</h1>
-    <p>This is a paragraph of text.</p>
-    <h1> addable</h1>
+    <h1 class="text-4xl font-bold text-center mt-8 animated">Hosting a Website on AWS EC2</h1>
+    
+    <div class="card">
+        <h2 class="text-2xl font-bold mt-8">Introduction</h2>
+        <p class="mt-4">
+            Welcome to our <span class="interactive">interactive</span> guide on hosting a website on AWS EC2! In this tutorial, we will walk you through the steps to set up your own website on an EC2 instance.
+        </p>
+    </div>
+    
+    <div class="card">
+        <h2 class="text-2xl font-bold mt-8">Step 1: Launch an EC2 Instance</h2>
+        <p class="mt-4">
+            To get started, you need to launch an EC2 instance on AWS. Follow these steps:
+            <ol class="list-decimal ml-8">
+                <li>Sign in to the AWS Management Console.</li>
+                <li>Navigate to the EC2 service.</li>
+                <li>Click on "Launch Instance" and select your desired instance type.</li>
+                <li>Configure the instance details, such as network settings and security groups.</li>
+                <li>Review and launch the instance.</li>
+            </ol>
+        </p>
+    </div>
+    
+    <div class="card">
+        <h2 class="text-2xl font-bold mt-8">Step 2: Set Up Your Website</h2>
+        <p class="mt-4">
+            Once your EC2 instance is up and running, you can proceed to set up your website. Here are the steps:
+            <ol class="list-decimal ml-8">
+                <li>Connect to your EC2 instance using SSH.</li>
+                <li>Install a web server, such as Apache or Nginx.</li>
+                <li>Upload your website files to the server.</li>
+                <li>Configure the web server to serve your website.</li>
+            </ol>
+        </p>
+    </div>
+    
+    <div class="card">
+        <h2 class="text-2xl font-bold mt-8">Step 3: Periodic Repository Check with Cron</h2>
+        <p class="mt-4">
+            To automate the process of updating your website with the latest changes from your repository, you can use the cron utility in Linux. Here's how:
+            <ol class="list-decimal ml-8">
+                <li>Set up a cron job to run the script periodically.</li>
+            </ol>
+        </p>
+    </div>
+    
+    <div class="card">
+        <h2 class="text-2xl font-bold mt-8">Conclusion</h2>
+        <p class="mt-4">
+            Congratulations! You have successfully learned how to host a website on AWS EC2 and automate repository updates using cron. Feel free to explore more advanced topics and enhance your website further.
+        </p>
+    </div>
 </body>
 </html>
