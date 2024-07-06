@@ -1,1 +1,1 @@
-*/5 * * * * /bin/bash python3 autoupdate.py
+* * * * * /bin/bash python3 autoupdate.py
