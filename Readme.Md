@@ -1,4 +1,4 @@
-# Project Name
+# CICD
 
 A Python project for keeping a website updated using PyGitHub.
 
